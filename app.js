@@ -36,5 +36,6 @@ const setTarea = e => {
   console.log('diste click');
 
   formulario.reset()
+  input.focus()
   
 }
