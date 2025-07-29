@@ -19,11 +19,20 @@ let tareas = {
 //console.log(Date.now())
 
 formulario.addEventListener('submit', e=> {
+  //Distintas formas de acceder al value del input
   e.preventDefault()
-  console.log(e.target[0].value);
-  console.log(e.target.querySelector('input').value);
-  console.log(input.value);
+  //console.log(e.target[0].value);
+  //console.log(e.target.querySelector('input').value);
+  //console.log(input.value);
   
-  
-  
+  setTarea(e)
 })
+
+const setTarea = e => {
+  if (input.value.trim() === '') {
+    console.log('esta vacío');
+    return    
+  }
+  console.log('diste click');
+  
+}
