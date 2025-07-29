@@ -19,8 +19,8 @@ let tareas = {
 //console.log(Date.now())
 
 formulario.addEventListener('submit', e=> {
-  //Distintas formas de acceder al value del input
   e.preventDefault()
+  //Distintas formas de acceder al value del input
   //console.log(e.target[0].value);
   //console.log(e.target.querySelector('input').value);
   //console.log(input.value);
@@ -34,5 +34,7 @@ const setTarea = e => {
     return    
   }
   console.log('diste click');
+
+  formulario.reset()
   
 }
